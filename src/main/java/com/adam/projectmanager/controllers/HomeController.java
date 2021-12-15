@@ -21,6 +21,8 @@ public class HomeController {
     @Autowired
     private UserService userService;
     
+//    		***Login/Registration
+    
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("newUser", new User());
@@ -52,7 +54,13 @@ public class HomeController {
         return "redirect:/home";
     }
 	
-	
+//				***Dashboard***
+    
+    @GetMapping("/dashboard")
+    public String dashboard() {
+    	
+    	return "dashboard.jsp";
+    }
 	
 	
 	
