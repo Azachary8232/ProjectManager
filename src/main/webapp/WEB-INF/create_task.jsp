@@ -16,6 +16,44 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div class="container2 m-3">
+	<div>
+		<h1>Create a Project</h1>
+	</div>
+	<div>
+		<form:form action="/" method="post" modelAttribute="exp">
+			<div class="input-group mb-3">
+			    <form:label class="input-group-text" path="expense">Expense</form:label>
+			    <form:errors path="expense"/>
+			    <form:input path="expense" class="form-control"/>
+			</div>
+			<div class=" my-4 mb-3">
+			    <form:label class="input-group-text" path="description">Description</form:label>
+			    <form:errors path="description"/>
+			    <form:textarea path="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></form:textarea>
+			</div>	
+			<div>
+			<div class=" my-4 mb-3">
+			    <form:label class="input-group-text" path="dutDate">Due Date</form:label>
+			    <form:errors path="dueDate"/>
+			    <form:input path="dueDate" type="date" class="form-control"></form:input>
+			</div>	
+			    <form:hidden path="creator"  value="${user_id}"></form:hidden>
+				<div class="flex flex-end">
+					<button type="submit" class="btn btn2 btn-primary">Submit</button>
+					<button type="submit" class="btn btn2 btn-primary">Submit</button>
+				</div>				
+			</div>	
+		</form:form>
+	</div>
+
+
+
+
+
+
+</div>
+
 
 </body>
 </html>

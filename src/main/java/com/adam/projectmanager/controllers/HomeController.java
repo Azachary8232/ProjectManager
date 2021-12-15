@@ -64,6 +64,14 @@ public class HomeController {
     	
     	return "dashboard.jsp";
     }
+    
+//    			***Create Task***
+    
+    @GetMapping("/projects/new")
+    public String createTask() {
+    	
+    	return "create_task";
+    }
 	
 //				***Logout***
     
