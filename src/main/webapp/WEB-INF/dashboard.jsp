@@ -30,7 +30,7 @@
 				<p>All Projects</p>
 			</div>
 			<div>
-				<button type="submit" class="btn btn2 btn-primary">+ new project</button>
+				<a href="/projects/new" class="btn btn2 btn-primary">+ new project</a>
 			</div>
 		</div>
 		<div>
@@ -47,7 +47,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>SAMPLE</td>
+							<td><a href="">SAMPLE</a></td>
 							<td>SAMPLE</td>
 							<td>SAMPLE</td>
 							<td>SAMPLE</td>
@@ -55,7 +55,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="my-3">
+			<div class="my-5">
 				<p>Your Projects</p>
 				<table class="table table-striped table-hover">
 					<thead>
@@ -68,7 +68,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>SAMPLE</td>
+							<td><a href="">SAMPLE</a></td>
 							<td>SAMPLE</td>
 							<td>SAMPLE</td>
 							<td>SAMPLE</td>
