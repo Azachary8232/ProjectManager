@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.adam.projectmanager.models.LoginUser;
+import com.adam.projectmanager.models.Project;
 import com.adam.projectmanager.models.User;
 import com.adam.projectmanager.services.UserService;
 
@@ -68,9 +69,15 @@ public class HomeController {
 //    			***Create Task***
     
     @GetMapping("/projects/new")
-    public String createTask() {
+    public String createTask(@ModelAttribute("project") Project project) {
     	
-    	return "create_task";
+    	return "create_task.jsp";
+    }
+    
+    @PostMapping("/projects/new")
+    public String newProject(@Valid @ModelAttribute("project") Project project, BindingResult result) {
+    	
+    	return "redirect:/dashboard";
     }
 	
 //				***Logout***
