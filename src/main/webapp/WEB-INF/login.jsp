@@ -17,14 +17,23 @@
 </head>
 <body>
 	<div class="container2 m-4">
-		<div class="flex spaceAround">
+		<div>
+			<h1 class="textAlign blue">Project Manager</h1>
+			<p class="textAlign">A place for teams to manage projects</p>
+		</div>
+		<div class="flex spaceAround my-2 ">
 			<div>
 				<h1 class="mb-3">Register</h1>
 				<form:form action="/register" method="post" modelAttribute="newUser">
 			        <div class="form-group mb-3">
-			            <label>User Name:</label>
-			            <form:input path="userName" class="form-control" />
-			            <form:errors path="userName" class="text-danger" />
+			            <label>First Name:</label>
+			            <form:input path="firstName" class="form-control" />
+			            <form:errors path="firstName" class="text-danger" />
+			        </div>
+			        <div class="form-group mb-3">
+			            <label>Last Name:</label>
+			            <form:input path="lastName" class="form-control" />
+			            <form:errors path="lastName" class="text-danger" />
 			        </div>
 			        <div class="form-group mb-3">
 			            <label>Email:</label>

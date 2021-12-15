@@ -16,6 +16,67 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<div class="container2 m-5 ">
+		<div class="flex">
+			<div>
+				<h1>Welcome, SAMPLE</h1>
+			</div>
+			<div class="mx-5 alignCenter">
+				<a href="/logout">logout</a>
+			</div>
+		</div>
+		<div class="flex spaceBetween my-3">
+			<div>
+				<p>All Projects</p>
+			</div>
+			<div>
+				<button type="submit" class="btn btn2 btn-primary">+ new project</button>
+			</div>
+		</div>
+		<div>
+			<div>
+				<p>All Projects</p>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<td>Project</td>
+							<td>Team Lead</td>
+							<td>Due Date</td>
+							<td>Actions</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="my-3">
+				<p>Your Projects</p>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<td>Project</td>
+							<td>Lead</td>
+							<td>Due Date</td>
+							<td>Actions</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+							<td>SAMPLE</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
